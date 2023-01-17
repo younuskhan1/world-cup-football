@@ -16,7 +16,7 @@ body {
 
 .header-container {
     width: 90%;
-    height: 550px;
+    height: 100%;
     margin: 50px auto;
     background-color: midnightblue;
     border-radius: 30px;
@@ -24,10 +24,12 @@ body {
 
 .website-poster {
     display: flex;
-    height: 550px;
+    height: 100%;
     flex-direction: row;
     align-items: center;
-    padding: 70px;
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .poster-text {
@@ -74,13 +76,13 @@ body {
 
 @media only screen and (max-width: 688px) {
     .header-container {
-        height: 930px;
+        height: 100%;
     }
 
     .website-poster {
         flex-direction: column;
-        height: 950px;
-        padding: 40px;
+        height: 100%;
+        /* padding: 40px; */
         align-items: center;
         justify-content: center;
     }
@@ -97,6 +99,7 @@ body {
         width: 100%;
         height: 28rem;
         padding-top: 15px;
+        padding-bottom: 0px;
     }
 
     .poster-text h1 {
