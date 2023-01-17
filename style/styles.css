@@ -74,6 +74,90 @@ body {
     padding-top: 35px;
 }
 
+/* -----------------
+main section css starts
+--------------------- */
+.main-container {
+    width: 90%;
+    height: 100%;
+    margin: 50px auto;
+    /* background-color: midnightblue; */
+    border-radius: 30px;
+}
+
+.main-section {
+    display: flex;
+    gap: 20px;
+}
+
+.button-section {
+    padding: 20px;
+    background-color: midnightblue;
+    border-radius: 7px;
+    width: 250px;
+    height: 250px;
+}
+
+.button input {
+    display: block;
+    padding: 15px 40px;
+    background-color: white;
+    gap: 20px;
+    border-radius: 7px;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif
+}
+
+#second-button {
+    margin-bottom: 20px;
+}
+
+#first-button {
+    margin-bottom: 20px;
+}
+
+#second-button input {
+    padding: 15px 66px;
+}
+
+#third-button input {
+    padding: 15px 83px;
+    background-color: orangered;
+    color: white;
+}
+
+.font-awesome {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-section {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.card-image img {
+    width: 100%;
+}
+
+.card-text {
+    padding: 15px;
+}
+
+.card-text h5 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 @media only screen and (max-width: 688px) {
     .header-container {
         height: 100%;
@@ -113,6 +197,23 @@ body {
     .poster-text input {
         display: block;
         margin: 20px auto;
+
+    }
+
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-section {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+
+    }
+
+    .button-section {
+        background-color: white;
+        padding-top: 0px;
 
     }
 
