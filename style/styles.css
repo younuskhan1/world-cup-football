@@ -197,6 +197,7 @@ main section css starts
     .poster-text input {
         display: block;
         margin: 20px auto;
+        padding: 25Px;
 
     }
 
@@ -214,6 +215,44 @@ main section css starts
     .button-section {
         background-color: white;
         padding-top: 0px;
+
+    }
+
+}
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-section {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        /* justify-content: center; */
+
+    }
+
+    .button-section {
+        background-color: white;
+        padding-top: 0px;
+        border-radius: 7px;
+        width: 70%;
+        height: 100%;
+
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .poster-text input {
+        display: block;
+        margin: 40px auto;
+
 
     }
 
