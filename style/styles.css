@@ -49,6 +49,7 @@ body {
     color: aqua;
     font-size: 1rem;
     padding-top: 30px;
+
 }
 
 .poster-text input {
@@ -266,6 +267,11 @@ ul>li {
 
     .poster-text p {
         text-align: center;
+        white-space: nowrap;
+        /* height: 93px;
+        width: 90%; */
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .poster-text input {
