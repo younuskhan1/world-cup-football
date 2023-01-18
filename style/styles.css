@@ -340,7 +340,9 @@ ul>li {
 
     .poster-text input {
         display: block;
-        margin: 40px auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
 
     }
 
