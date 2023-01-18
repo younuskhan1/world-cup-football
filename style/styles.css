@@ -12,7 +12,7 @@ body {
     box-sizing: border-box;
 }
 
-/*---------- header css starts ----------*/
+/*---------- header css is started ----------*/
 
 .header-container {
     width: 90%;
@@ -74,13 +74,12 @@ body {
     padding-top: 35px;
 }
 
-/* -----------------
-main section css starts
---------------------- */
+/*---------- header css is ended ----------*/
+/* ---------main section css starts-------- */
 .main-container {
     width: 90%;
     height: 100%;
-    margin: 50px auto;
+    margin: 40px auto;
     /* background-color: midnightblue; */
     border-radius: 30px;
 }
@@ -158,7 +157,28 @@ main section css starts
     padding-bottom: 15px;
 }
 
-/* footer css is started */
+.view-button {
+    padding: 15px 40px;
+    background-color: deeppink;
+    margin-top: 40px;
+    border-radius: 7px;
+    font-size: 1rem;
+    color: yellow;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    visibility: hidden;
+    transition: background-color 1s ease-in-out;
+    font-family: 'Roboto Slab', serif;
+}
+
+.view-button:hover {
+    background-color: indigo;
+    color: cyan;
+}
+
+/* ---------main section css starts-------- */
+/* ---------footer css is started-------- */
 footer {
     width: 100%;
     height: 100%;
@@ -205,13 +225,12 @@ ul>li {
     font-size: 3rem;
     color: aqua;
     padding-bottom: 30px;
+    cursor: pointer;
 }
 
+/* ---------footer css is ended-------- */
 
-
-
-
-
+/*-------- media queries for small devices----------- */
 
 @media only screen and (max-width: 688px) {
     .header-container {
@@ -280,6 +299,7 @@ ul>li {
 
 }
 
+/*-------- media queries for medium devices----------- */
 @media only screen and (min-width: 689px) and (max-width: 992px) {
     .main-section {
         flex-direction: column;
@@ -313,7 +333,10 @@ ul>li {
         display: block;
         margin: 40px auto;
 
+    }
 
+    .view-button {
+        visibility: visible;
     }
 
     ul {
